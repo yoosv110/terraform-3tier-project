@@ -46,7 +46,7 @@ variable "private_rds_subnets" {
 }
 
 variable "allowed_ssh_cidr" {
-  description = "Administrator public IP CIDR allowed to SSH to Bastion. Example: 1.2.3.4/32"
+  description = "Administrator public IP CIDR allowed to SSH to Bastion"
   type        = string
 }
 
