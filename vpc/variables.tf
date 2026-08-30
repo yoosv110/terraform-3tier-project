@@ -1,0 +1,23 @@
+variable "vpc_cidr" {
+  type = string
+}
+
+variable "availability_zones" {
+  type = list(string)
+}
+
+variable "public_subnets" {
+  type = list(string)
+}
+
+variable "private_app_subnets" {
+  type = list(string)
+}
+
+variable "private_rds_subnets" {
+  type = list(string)
+}
+
+variable "environment" {
+  type = string
+}
