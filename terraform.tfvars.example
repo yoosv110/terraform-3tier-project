@@ -8,13 +8,13 @@ public_subnets      = ["10.0.1.0/24", "10.0.4.0/24"]
 private_app_subnets = ["10.0.2.0/24", "10.0.5.0/24"]
 private_rds_subnets = ["10.0.3.0/24", "10.0.6.0/24"]
 
-# 반드시 본인 관리자 공인 IP/32로 변경
-allowed_ssh_cidr = "203.0.113.10/32"
+# 본인 관리자 공인 IP/32로 변경
+allowed_ssh_cidr = "16.184.42.49"
 
 # AWS에 미리 생성해 둔 Key Pair 이름
-ssh_key_name_bastion = "bastion-key"
-ssh_key_name_web     = "web-key"
-ssh_key_name_app     = "app-key"
+ssh_key_name_bastion = "test-EC2-key"
+ssh_key_name_web     = "test-EC2-key"
+ssh_key_name_app     = "test-EC2-key"
 
 # null이면 최신 Amazon Linux 2023 AMI 자동 조회
 ami_id = null
@@ -43,7 +43,7 @@ domain_name           = null
 db_identifier            = "three-tier-mysql"
 db_name                  = "appdb"
 db_username              = "admin"
-db_password              = "CHANGE_ME_STRONG_PASSWORD"
+db_password              = "qqq123##$$"
 db_instance_class        = "db.t3.micro"
 db_allocated_storage     = 20
 db_max_allocated_storage = 100
