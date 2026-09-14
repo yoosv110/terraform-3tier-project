@@ -33,7 +33,7 @@ app_asg_max     = 4
 
 scaling_cpu_target = 60
 
-# HTTPS/Route53은 인증서와 도메인이 준비된 뒤 활성화
+# HTTPS/Route53은 인증서와 도메인이 준비된 뒤 활성화. 
 enable_https          = false
 ssl_certificate_arn   = null
 create_route53_record = false
@@ -49,4 +49,4 @@ db_allocated_storage     = 20
 db_max_allocated_storage = 100
 rds_multi_az             = true
 
-enable_waf = false
+enable_waf = true
